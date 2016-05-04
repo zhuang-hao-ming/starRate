@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>star</title>
+  <link rel="stylesheet" href="star-rate.css">
+  
+</head>
+
+<body>
+  
+  <div id="1">
+  </div>
+  
+  <div id="2">
+  </div>
+
+  
+  <div id="3">
+  </div>
+  
+  <div id="4">
+  </div>
+  <script src="jquery.js"></script>
+  <script src="star-rate.js"></script>
+  <script>
+    $('div#1').starRate({
+      size: 6,
+      onEvent: true,
+      activeSize: 5,
+      starSize: 50
+    });
+    $('div#2').starRate({
+      size: 10,
+      onEvent: false,
+      activeSize: 3,
+      starSize: 16
+    });
+    
+    $('div#3').starRate({
+      size: 11,
+      onEvent: true,
+      activeSize: 3,
+      starSize: 30,
+      activeColor: 'blue',
+      normalColor: 'black'
+    });
+  </script>
+</body>
+
+</html>
